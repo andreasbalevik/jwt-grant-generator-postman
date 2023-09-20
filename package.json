@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "setup": "npm run submodule:update && npm run submodule:build",
     "submodule:update": "git submodule update --init --recursive",
     "submodule:build": "cd jwt-grant-generator && mvn package",
     "generate": "java -jar $(ls jwt-grant-generator/target/jwt-grant-generator-*-SNAPSHOT-jar-with-dependencies.jar | tail -n1) $npm_config_input",

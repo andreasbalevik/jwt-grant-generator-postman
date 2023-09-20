@@ -7,11 +7,8 @@ This project generates Maskinporten token using the official [jwt-grant-generato
 
 ## Installation
 ```
-npm install
-npm 
+npm install && npm run setup
 ```
-
-. Run npm install in the root of the project. `npm install`
 
 ## Usage
 
