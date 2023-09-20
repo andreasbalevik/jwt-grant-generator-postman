@@ -1,0 +1,3 @@
+[submodule "jwt-grant-generator"]
+	path = jwt-grant-generator
+	url = https://github.com/felleslosninger/jwt-grant-generator.git

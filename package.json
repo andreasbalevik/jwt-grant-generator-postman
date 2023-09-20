@@ -1,0 +1,16 @@
+{
+  "name": "generate-maskinporten-token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "submodule:update": "git submodule update --init --recursive",
+    "submodule:build": "cd jwt-grant-generator && mvn package",
+    "generate": "java -jar $(ls jwt-grant-generator/target/jwt-grant-generator-*-SNAPSHOT-jar-with-dependencies.jar | tail -n1) $npm_config_input",
+    "generate:access_token": "java -jar $(ls jwt-grant-generator/target/jwt-grant-generator-*-SNAPSHOT-jar-with-dependencies.jar | tail -n1) $npm_config_input json | jq -r '.token.access_token'",
+    "server:start": "node server.js $npm_config_input"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
