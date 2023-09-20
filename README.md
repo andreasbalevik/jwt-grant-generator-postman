@@ -2,10 +2,16 @@
 
 This project generates Maskinporten token using the official [jwt-grant-generator](https://github.com/felleslosninger/jwt-grant-generator) library from [Digdir](https://github.com/felleslosninger).
 
+# Requirements
+- [jq](https://stedolan.github.io/jq/)
 
 ## Installation
-1. Install jq. On Mac: `brew install jq`
-2. Run npm install in the root of the project. `npm install`
+```
+npm install
+npm 
+```
+
+. Run npm install in the root of the project. `npm install`
 
 ## Usage
 
