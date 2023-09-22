@@ -10,9 +10,9 @@ This project generates Maskinporten token using the official [jwt-grant-generato
 npm install && npm run setup
 ```
 
-## Usage
-
 Remeber to add properties files, see [jwt-grant-generator](https://github.com/felleslosninger/jwt-grant-generator) for example.
+
+## Usage
 
 Generate access_token.
 ```
